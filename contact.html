@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<header id="mainhead"> 
+	<header id="main-header"> 
 		<div class="container">
 		<a href="index.html" id="logo"> Andrew Peterson </a>
 		<nav>		 
@@ -20,26 +20,44 @@
 		</div>
 	</header> 
 
-	<div id="content"> 	
-		<div id="form-main">
-			<div id="form-div">
-			<form class="form" id="form1">
-      			<p class="name">
-        				<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" /> </p>
-      			<p class="email">
-        				<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" /> </p>
-    			<p class="text">
-    			    	<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"> </textarea> </p>
-      			<div class="submit">
-        				<input type="submit" value="SEND" id="button-blue"/>
-      			<div class="ease"> </div>
-     		</div>				
- 	 		</form>
- 		</div>
- 	</div>
-	
+	<div id="main-container" class= "container"> 	
+		<section class="main-section">
+			<h1> Contact </h1>
+			
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="John Smith" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"> </textarea>
+					</li>
+				</ul>
+				<input type="submit">
+			</form>
+		</section>
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+				
+				<a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub"/> </a>
+				<a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn"/> </a>
+				<a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow"/> </a>
+			</div>
+		</section>
+	</div>
 
-
+	<footer>
+		<div class="container">
+			Copyright &copy; 2017 Andrew Peterson
+		</div>
+	</footer>
 </body>
 
 </html>
